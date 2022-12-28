@@ -1,0 +1,9 @@
+body > div[title]:not(div[class]){
+    color: red;
+    font-size: 50px;
+
+}
+
+body p:first-child ~ div[title="Elzero"]:nth-child(4),div[title="Hello"],div[title="HTML"]{
+    color: red;
+}

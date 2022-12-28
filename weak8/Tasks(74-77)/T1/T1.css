@@ -1,0 +1,66 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: red red red transparent;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+div::before{
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent green green green;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    
+}
+div::after{
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffc107 transparent #FFC107 #FFC107;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+
+
+}
+
+div:hover{
+    animation-play-state:paused;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+}

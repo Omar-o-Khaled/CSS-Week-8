@@ -1,0 +1,11 @@
+/* 1 */
+div p , div div:first-child ~ div:not(:last-child){
+    color: red;
+    font-size: 50px;
+}
+
+/* 2 */
+div p ,div  div:not(:last-child):not(:first-child){
+    color: red;
+}
+

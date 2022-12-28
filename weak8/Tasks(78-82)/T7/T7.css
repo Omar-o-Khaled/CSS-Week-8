@@ -1,0 +1,22 @@
+/* 1 */
+div:first-child h3:last-of-type + div{
+    font-size: 50px;
+    color: red;
+}
+
+/* 2 */
+div:first-child h3 + div:nth-last-of-type(2){
+    color: aqua;
+}
+
+/* 3 */
+div:first-of-type h3 + div:nth-last-of-type(2){
+    color: rgb(0, 255, 94);
+}
+
+
+/* 4 */
+div:not([class]) h3 + div:nth-last-of-type(2){
+    color: rgb(38, 0, 255);
+}
+

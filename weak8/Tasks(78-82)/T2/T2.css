@@ -1,0 +1,22 @@
+
+/* 1 */
+.parent > .child + .child{
+    color: red;
+    font-size: 50px;
+}
+
+/* 2 */
+.parent > .child:last-child{
+    color: red;
+}
+
+/* 3 */
+.parent .child:nth-of-type(2){
+    color: red;
+}
+
+/* 4 */
+.parent .child:nth-child(even){
+    color: red;
+
+}

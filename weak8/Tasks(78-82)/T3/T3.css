@@ -1,0 +1,20 @@
+/* 1 */
+.parent:nth-child(2) .baby{
+    color: red;
+    font-size: 50px;
+}
+
+/* 2 */
+.parent > .baby:first-of-type:last-child{
+    color: navy;
+} 
+
+/* 3 */
+.parent .baby:first-child:last-child{
+    color: blueviolet;
+}
+
+.parent .baby:only-child{
+    color: lawngreen;
+
+}
